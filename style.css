@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Mukta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: #020312;
+    color: aliceblue;
+    line-height: 1.6;
+    font-style: italic;
+}
+header{
+    font-family: "Mukta", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 22px 16%;
+	border-bottom: 1px solid transparent;
+	transition: all .40s ease;
+}
+
+section{
+    margin: 100px 16% 0px;
+    padding-top: 100px;
+}
+.navbar{
+    display: flex;
+}
+.navbar .logo{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    color: rgb(253, 212, 6);
+    font-size: xx-large;
+    margin-right: 50px;
+}
+.navbar ul{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(7,auto);
+    list-style-type: none;
+}
+.navbar a{
+    text-decoration: none;
+    color: aliceblue;
+    font-style: italic;
+    font-size:large;
+    font-weight: bold;
+	padding: 10px 25px;
+	margin: 0 2px;
+	border-radius: 0.5rem;
+	transition: all .40s ease;
+}
+.navbar a:hover{
+    background-color: #f94848;
+    color: black;
+}
+.home .home-text{
+    position: absolute;
+    left:16%;
+    top: 28%;
+}
+span{
+    color: #f94848;
+    font-style: italic;
+}
+.home .home-text h4, .home .home-text h3{
+    font-size: xx-large;
+    font-style: italic;
+}
+.home .home-text h1{
+    font-size: 90px;
+    font-style: italic;
+}
+.btn{
+    background-color: #f94848;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: medium;
+}
+.btn:hover{
+    background-color: black;
+    color: aliceblue;
+    padding: 17px 27px;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: large;
+}
+.back-video{
+	position: absolute;
+    right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+video{
+    width: 100%;
+}
+.aboutme{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 0;
+    padding-top: 0;
+}
+.aboutme-left img{
+    height: 500px;
+    width: 450px;
+    margin: 100px;
+    margin-left: 0px;
+    border-radius: 50%;
+}
+.aboutme-right{
+    line-height: 1.6;
+}
+.aboutme-right h2{
+    font-size: 50px;
+    font-style: italic;
+}
+.aboutme-right h4{
+    font-size:x-large;
+    font-style: italic;
+    color: #f94848;
+    line-height: 40px;
+}
+.aboutme-right p{
+    color: gray;
+}
+.aboutme-right h5{
+    font-size: x-large;
+    line-height: 2.0;
+}
+
+.hlan{
+    font-size: xx-large;
+    border-bottom: #f94848 5px solid;
+    border-radius: 50%;
+    text-align: center;
+}
+.lang img{
+    height: 100px;
+    width: 100px;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 50px;
+}
+.lang:hover{
+    border-bottom: #f94848 5px solid;
+    border-radius: 100%;
+    transform: scale(1,1.1);
+    transition: img 0.5s linear;
+}
+.lang h3{
+    text-align: center;
+}
+.experience h2{
+    font-size: 50px;
+    font-style: italic; 
+    text-align: center;
+}
+.exp1{
+    padding: 10%;
+    background-color:#202121 ;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+.exp1:hover{
+    transform: scale(1.05,1.05);
+    transition: all 1s linear;
+    border-top: #f94848 solid 5px;
+    color: #f94848;
+}
+.exp1 img{
+    width: 20%;
+    height: 20%; 
+    border-radius: 3px;
+}
+.exp1 h3{
+    font-size: x-large;
+}
+.exp1 h4{
+    font-size: larger;
+    color: #f94848;
+}
+.exp1 ul{
+    color: gray;
+}
+.skills h2{
+    font-size: 50px;
+    font-style: italic; 
+    text-align: center;
+}
+.skillset>*{
+    padding: 5%;
+    background-color:#202121 ;
+    border-radius: 10px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.skillset>*:hover{
+    transform: scale(1.02,1.02);
+    transition: all 1s linear;
+    border-top: #f94848 solid 5px;
+    color: #f94848;
+}
+.skillset>* img{
+    width: 20%;
+    height: 20%; 
+}
+.skillset>* h3{
+    font-size: x-large;
+}
+.skillset>* p{
+    color: gray;
+}
+.achievements h2, .projects h2, .respon h2{
+    font-size: 50px;
+    font-style: italic; 
+    text-align: center;   
+}
+.achievements h3, .projects h3, .respon h3{
+    font-size: 27px;
+    font-style: italic; 
+    text-align: center;
+    color: #f94848;
+}
+.achiv, .proj, .resp{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.achiv>*, .proj>*, .resp>*{
+    padding: 5% 5% 5% 5%;
+    background-color:#202121;
+    border-radius: 10px;
+    line-height: 1.6;
+    margin: 15px;
+}
+.proj>*, .resp>*{
+    padding-bottom: 0;
+}
+.achiv>*:hover, .proj>*:hover, .resp>*:hover{
+    transform: scale(1.03,1.03);
+    transition: all 0.5s linear;
+}
+.achiv>* img, .proj>* img, .resp>* img{
+    width: 100%;
+    height: 65%;
+    border-radius: 2%;
+}
+.achiv>* h4{
+    color:rgb(225, 240, 253);
+    font-size: larger;
+}
+.proj>* h4, .resp>* h4{
+    color:rgb(225, 240, 253);
+    font-size: x-large;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.achiv>* h5, .proj>* h5, .resp>* h5{
+    color: #f94848;
+    font-size: medium;
+    line-height: 2.0;
+}
+.contact h2{
+    font-size: 50px;
+    font-style: italic;
+}
+.contact h3{
+    font-size: larger;
+    font-style: italic; 
+    color: #f94848;
+}
+.contact p,ul{
+    color: gray;
+    list-style-type: none;
+}
+.social-icon{
+    margin: 20px;
+}
+.social-icon a{
+    text-decoration: none;
+}
+.social-icon-img{
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+}
+.arrow{
+    padding-left: 1440px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.arrow a{
+    font-size: 40px;
+    color: #787676;
+    padding: 10px 12px;
+    background: #f94848;
+    border-radius: 50%;
+    transition: 0.6s;
+}
+.arrow img{
+    border-radius: 50%;
+    padding-top: 15px;
+}
+.arrow a:hover{
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.5),-2px -2px 12px rgba(0,0,0,0.5);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+@media screen and (max-width:1000px)
+{
+    .aboutme, .achiv, .proj, .resp{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 50px;
+    }
+    .home .home-text{
+        position: absolute;
+        left:10%;
+        top: 15%;
+        transform: scale(0.5);
+    }
+    section{
+        margin: 0px 16% 0px;
+        padding-top: 50px;
+    }
+}
+@media screen and (max-width:600px){
+    .navbar ul{
+        display:none;
+    }
+    .home .home-text{
+        position: absolute;
+        left:10px;
+        top: 10px;
+        transform: scale(0.3);
+    }
+}
